@@ -13,7 +13,7 @@
   <body>
     <header>
       <details open>
-        <summary>Hit Test</summary>
+        <summary>Upload a file or leave the default</summary>
         <p>
           <a class="back" href="./">Back</a>
           <input id="fileInput" type="file">
@@ -36,6 +36,11 @@
       let xrRefSpace = null;
       let xrViewerSpace = null;
       let xrHitTestSource = null;
+      let gltfUrl = './media/gltf/sunflower/sunflower.gltf';
+
+      if(localStorage.getItem('FILE_KEY')){
+        gltfUrl = localStorage.getItem('FILE_KEY');
+      }
 
       // WebGL scene globals.
       let gl = null;
@@ -47,7 +52,7 @@
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: './media/gltf/sunflower/sunflower.gltf'});
+      let flower = new Gltf2Node({url: gltfUrl});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: './media/gltf/reticle/reticle.gltf'});
