@@ -47,10 +47,10 @@
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: localStorage.getItem("FILE")});
+      let flower = new Gltf2Node({url: localStorage.getItem(FILE_KEY)});
       arObject.addNode(flower);
 
-      let reticle = new Gltf2Node({url: localStorage.getItem("FILE")});
+      let reticle = new Gltf2Node({url: localStorage.getItem(FILE_KEY)});
       reticle.visible = false;
       scene.addNode(reticle);
 
