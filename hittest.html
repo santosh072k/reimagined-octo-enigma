@@ -50,7 +50,7 @@
       let flower = new Gltf2Node({url: localStorage.getItem("FILE")});
       arObject.addNode(flower);
 
-      let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
+      let reticle = new Gltf2Node({url: localStorage.getItem("FILE")});
       reticle.visible = false;
       scene.addNode(reticle);
 
