@@ -51,10 +51,8 @@
       let xrViewerSpace = null;
       let xrHitTestSource = null;
       let gltfUrl = "./media/gltf/sunflower/sunflower.gltf";
+      gltfUrl = "https://cors-anywhere.herokuapp.com/https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Avocado/glTF/Avocado.gltf"
 
-      if (localStorage.getItem(FILE_KEY)) {
-        gltfUrl = localStorage.getItem(FILE_KEY);
-      }
 
       console.log(gltfUrl);
       // WebGL scene globals.
