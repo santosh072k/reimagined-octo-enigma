@@ -1,6 +1,6 @@
 {
   "name": "major1",
-  "private": true,
+  "private": "false",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
