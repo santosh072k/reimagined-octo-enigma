@@ -87,7 +87,8 @@ selector.addEventListener("change", (evt) => {
     <div class="loader"></div>`;
     console.log(evt.target.value);
     selectedAsset = assets[evt.target.value];
-    lb.href = `./image-tracking/gltfs/${evt.target.value.toLowerCase()}/index.html`;
+    let lcv = evt.target.value.toString().toLowerCase();
+    lb.href = `./image-tracking/gltfs/${lcv}/index.html`;
     console.log(selectedAsset);
 });
 
